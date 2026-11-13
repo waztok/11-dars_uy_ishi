@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int i, b;
+    int a = 0, y = 0, q = 0, qs = 0;
+
+    for(i = 1; i <= 15; i++) {
+        scanf("%d", &b);
+
+        if(b < 0 || b > 100) {
+            continue;
+        }
+
+        if(b >= 90 && b <= 100) {
+            printf("A'lo\n");
+            a = a + 1;
+        }
+        if(b >= 75 && b <= 89) {
+            printf("yaxshi\n");
+            y = y + 1;
+        }
+        if(b >= 60 && b <= 74) {
+            printf("qoniqarli\n");
+            q = q + 1;
+        }
+        if(b >= 0 && b <= 59) {
+            printf("qoniqarsiz\n");
+            qs = qs + 1;
+        }
+    }
+
+    printf("%d\n", a);
+    printf("%d\n", y);
+    printf("%d\n", q);
+    printf("%d\n", qs);
+
+    return 0;
+}

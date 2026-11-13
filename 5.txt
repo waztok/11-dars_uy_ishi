@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, i;
+    int s3 = 0, s5 = 0, s35 = 0;
+
+    scanf("%d %d", &a, &b);
+
+    for(i = a; i <= b; i++) {
+        if(i % 3 == 0 && i % 5 == 0) {
+            printf("%d\n", i);
+            s35 = s35 + 1;
+        }
+        if(i % 3 == 0 && i % 5 != 0) {
+            s3 = s3 + 1;
+        }
+        if(i % 5 == 0 && i % 3 != 0) {
+            s5 = s5 + 1;
+        }
+    }
+
+    printf("%d\n", s3);
+    printf("%d\n", s5);
+    printf("%d\n", s35);
+
+    return 0;
+}

@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int k = 1;
+
+    while(k != 0) {
+        scanf("%d", &k);
+
+        switch(k) {
+            case 0:
+                break;
+            case 1:
+                printf("dushanba\n");
+                break;
+            case 2:
+                printf("seshanba\n");
+                break;
+            case 3:
+                printf("chorshanba\n");
+                break;
+            case 4:
+                printf("payshanba\n");
+                break;
+            case 5:
+                printf("juma\n");
+                break;
+            case 6:
+                printf("shanba\n");
+                break;
+            case 7:
+                printf("yakshanba\n");
+                break;
+            default:
+                printf("bunday hafta kuni mavjud emas\n");
+        }
+    }
+
+    return 0;
+}

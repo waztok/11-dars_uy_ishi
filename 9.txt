@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int joy = 20;
+    int a;
+
+    while (1) {
+        printf("\n1. son kiriting\n");
+        scanf("%d", &a);
+
+        switch (a) {
+            case 1:
+                if (joy > 0) {
+                    joy--;
+                    printf("mashina kirdi\n");
+                } else {
+                    printf("joy yo'q\n");
+                }
+                break;
+                
+            case 2:
+                if (joy < 20) {
+                    joy++;
+                    printf("mashina chiqarildi.\n");
+                } else {
+                    printf("joylar bo'sh\n");
+                }
+                break;
+                
+            case 4:
+                printf("dastur tugadi.\n");
+                return 0;
+                
+            default:
+                printf("nito'g'ri tanlov\n");
+        }
+    }
+
+    return 0;
+}

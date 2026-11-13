@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int t = 0, m, s = 0;
+
+    while(t != 5) {
+        printf("1. olma - 5000 so'm\n");
+        printf("2. banan - 12000 so'm\n");
+        printf("3. apelsin - 10000 so'm\n");
+        printf("4. hisobni ko'rish\n");
+        printf("5. xaridni yakunlash\n");
+
+        scanf("%d", &t);
+
+        switch(t) {
+            case 1:
+                scanf("%d", &m);
+                s = s + m * 5000;
+                break;
+            case 2:
+                scanf("%d", &m);
+                s = s + m * 12000;
+                break;
+            case 3:
+                scanf("%d", &m);
+                s = s + m * 10000;
+                break;
+            case 4:
+                printf("%d\n", s);
+                break;
+            case 5:
+                printf("%d\n", s);
+                break;
+        }
+    }
+
+    return 0;
+}
